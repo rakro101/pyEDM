@@ -3,7 +3,7 @@
 #include <cstring>
 
 #include "Common.h"
-
+#include "nmi.cc"
 //---------------------------------------------------------------
 // Binary sort function for FindNeighbors() & CCMNeighbors()
 //---------------------------------------------------------------
@@ -206,6 +206,7 @@ VectorError ComputeError( std::valarray< double > obsIn,
     }
     else {
         rho = ( sumProd - N * meanObs * meanPred ) / denom;
+        rho = calculate_normalized_mutual_information(pred, obs);
     }
 
     VectorError vectorError = VectorError();

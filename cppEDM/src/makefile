@@ -7,7 +7,7 @@ HEADERS = API.h CCM.h Common.h DataFrame.h DateTime.h EDM.h EDM_Neighbors.h\
           Multiview.h Parameter.h Simplex.h SMap.h Version.h
 
 SRCS = API.cc CCM.cc Common.cc DateTime.cc EDM.cc EDM_Formatting.cc\
-       EDM_Neighbors.cc Eval.cc Multiview.cc Parameter.cc Simplex.cc SMap.cc
+       EDM_Neighbors.cc Eval.cc Multiview.cc Parameter.cc Simplex.cc SMap.cc nmi.cc
 
 OBJ = $(SRCS:%.cc=%.o)
 
